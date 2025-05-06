@@ -13,8 +13,7 @@ public class MainLine {
     public static int target;
 
     public static void main(String[] args) throws IOException {
-//        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
-        BufferedReader in = new BufferedReader(new FileReader("src/input.txt"));
+        BufferedReader in = new BufferedReader(new InputStreamReader(System.in));
         PrintWriter out = new PrintWriter(new OutputStreamWriter(System.out));
         while ((line = in.readLine()) != null) {
             parts = line.split(" ");
