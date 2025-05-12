@@ -2,8 +2,9 @@ package test;
 
 public class demo01 {
     public static void main(String[] args) {
-        int n = 10;
-        String s = nestedForLoop(n);
+        int n = 2;
+//        String s = nestedForLoop(n);
+        int s = recursion(n);
         System.out.println("s = " + s);
     }
 
@@ -17,6 +18,16 @@ public class demo01 {
             }
         }
         return res.toString();
+    }
+
+    public static int recursion(int n) {
+        if (n == 1) {
+            return 1;
+        }
+        System.out.println("n = " + n);
+        int re = recursion(n - 1);
+        System.out.println("re = " + re);
+        return n + re;
     }
 }
 
