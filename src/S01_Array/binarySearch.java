@@ -9,7 +9,7 @@ package S01_Array;
 import java.io.*;
 import java.util.Arrays;
 
-public class part01 {
+public class binarySearch {
 
     static String lines;
     static int[] nums = new int[10000];

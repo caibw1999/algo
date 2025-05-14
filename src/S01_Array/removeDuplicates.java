@@ -13,7 +13,7 @@ package S01_Array;
 import java.io.*;
 import java.util.Arrays;
 
-public class part02_1 {
+public class removeDuplicates {
     static String str;
     static int[] nums;
 

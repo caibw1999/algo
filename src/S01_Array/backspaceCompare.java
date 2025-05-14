@@ -8,7 +8,7 @@ package S01_Array;
 
 import java.io.*;
 
-public class part02_3 {
+public class backspaceCompare {
     static String line, s, t;
     static char[] chars;
 

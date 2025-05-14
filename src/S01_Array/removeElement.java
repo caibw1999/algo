@@ -12,7 +12,7 @@ package S01_Array;
 import java.io.*;
 import java.util.Arrays;
 
-public class part02 {
+public class removeElement {
     static String str;
     static int val;
     static int[] nums = new int[100];
