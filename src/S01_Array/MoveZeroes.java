@@ -8,7 +8,7 @@ package S01_Array;
 import java.io.*;
 import java.util.Arrays;
 
-public class moveZeroes {
+public class MoveZeroes {
     static String str;
     static int[] nums;
 
