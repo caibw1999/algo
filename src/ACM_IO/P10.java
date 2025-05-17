@@ -22,10 +22,10 @@ public class P10 {
             if (m == 0 && k == 0) {
                 break;
             }
-
+            // 能花的天数就是充值进去的钱
             int day = m;
             while (m >= k) {
-                int keep = (m / k) * 1;//赠送的钱
+                int keep = (m / k);//赠送的钱
                 day += keep;
                 m = keep + m % k; //赠送的钱加上剩余的钱 -> 待充值的钱
             }
