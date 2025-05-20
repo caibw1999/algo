@@ -12,12 +12,12 @@
  * 输入示例
  * 3
  * <p>
- * 输出示例
- *   1
- *  121
+ * 输出示例(0为空格)
+ * 001
+ * 0121
  * 12321
- *  121
- *   1
+ * 00121
+ * 001
  */
 
 package ACM_IO;
@@ -27,12 +27,49 @@ import java.util.Scanner;
 public class P12 {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+//        Scanner sc = new Scanner("5 6");
         while (sc.hasNextInt()) {
             int n = sc.nextInt();
+            int[] nums = new int[2 * n - 1];
+            StringBuilder str = new StringBuilder();
 
-            for (int i = 0; i < 2 * n - 1; i++) {
+            for (int i = 1; i <= n; i++) {
+                //空格
+                for (int j = 0; j < n - i; j++) {
+                    str.append(" ");
+                }
+
+                // 数字
+                for (int j = 1; j <= i; j++) {
+                    str.append(j);
+                }
+                for (int j = i - 1; j >= 1; j--) {
+                    str.append(j);
+                }
+
+                str.append("\n");
 
             }
+
+            for (int i = n - 1; i >= 1; i--) {
+                //空格
+                for (int j = 0; j < n - i; j++) {
+                    str.append(" ");
+                }
+
+                // 数字
+                for (int j = 1; j <= i; j++) {
+                    str.append(j);
+                }
+                for (int j = i - 1; j >= 1; j--) {
+                    str.append(j);
+                }
+
+                str.append("\n");
+
+            }
+
+            System.out.println(str);
 
         }
     }
